@@ -1,0 +1,28 @@
+.modelHeadingBackground {
+  background: linear-gradient(90deg, #359ff3 0%, #8256ff 100%) !important;
+}
+.sidebarBackground {
+  background: linear-gradient(
+    336.94deg,
+    #27272c 13.48%,
+    rgba(25, 25, 25, 0) 186.73%
+  );
+}
+.buttonBackground {
+  background: linear-gradient(90deg, #359ff3 0%, #8256ff 100%) !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  &.active {
+    border-bottom: 2px solid black;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

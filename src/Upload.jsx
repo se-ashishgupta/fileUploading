@@ -43,9 +43,9 @@ const Upload = ({ modal, toggle }) => {
 
       for (let i = 0; i < selectedFile.length; i++) {
         const formData = new FormData();
-        if (selectedFile[i].size > 500 * 1024) {
-          continue;
-        }
+        // if (selectedFile[i].size > 500 * 1024) {
+        //   continue;
+        // }
         formData.append("file", selectedFile[i]);
         formData.append("folderName", newFolder);
 

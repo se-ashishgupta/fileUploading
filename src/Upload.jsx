@@ -49,8 +49,17 @@ const Upload = ({ modal, toggle }) => {
         formData.append("file", selectedFile[i]);
         formData.append("folderName", newFolder);
 
+        // const response = await axios.post(
+        //   "https://k.ocpl.tech/api/uploadOnServer",
+        //   formData,
+        //   {
+        //     headers: {
+        //       "Content-Type": "multipart/form-data",
+        //     },
+        //   }
+        // );
         const response = await axios.post(
-          "https://k.ocpl.tech/api/uploadOnServer",
+          "https://awstest.ocpl.tech/api/uploadOnServer",
           formData,
           {
             headers: {

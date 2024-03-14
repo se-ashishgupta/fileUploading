@@ -49,17 +49,8 @@ const Upload = ({ modal, toggle }) => {
         formData.append("file", selectedFile[i]);
         formData.append("folderName", newFolder);
 
-        // const response = await axios.post(
-        //   "https://k.ocpl.tech/api/uploadOnServer",
-        //   formData,
-        //   {
-        //     headers: {
-        //       "Content-Type": "multipart/form-data",
-        //     },
-        //   }
-        // );
         const response = await axios.post(
-          "https://awstest.ocpl.tech/api/uploadOnServer",
+          "https://k.ocpl.tech/api/uploadOnServer",
           formData,
           {
             headers: {
@@ -67,6 +58,15 @@ const Upload = ({ modal, toggle }) => {
             },
           }
         );
+        // const response = await axios.post(
+        //   "https://awstest.ocpl.tech/api/uploadOnServer",
+        //   formData,
+        //   {
+        //     headers: {
+        //       "Content-Type": "multipart/form-data",
+        //     },
+        //   }
+        // );
 
         if (response.status === 200) {
           console.log(response.data, "=", i);

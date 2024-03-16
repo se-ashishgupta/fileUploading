@@ -50,7 +50,7 @@ const Upload = ({ modal, toggle }) => {
         formData.append("folderName", newFolder);
 
         const response = await axios.post(
-          "https://k.ocpl.tech/api/uploadOnServer",
+          "https://kl.ocpl.tech/uploadOnServer",
           formData,
           {
             headers: {
